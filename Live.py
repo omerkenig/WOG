@@ -1,4 +1,4 @@
-from Apps.Utils import checkData
+from Utilities.Utils import checkData
 from games import CurrencyRouletteGame, MemoryGame, GuessGame
 
 
@@ -24,10 +24,11 @@ def load_game():
 
     while True:
         level_difficulty = input('Please choose game difficulty from 1 to 5:\n\n')
-        if level_difficulty.isdigit():
-            if 1 <= int(choose_game) <= 5:
-                level_difficulty = int(level_difficulty)
-                break
+        if checkData(level_difficulty, 1, 5):
+            # if level_difficulty.isdigit():
+            #     if 1 <= int(choose_game) <= 5:
+            level_difficulty = int(level_difficulty)
+            break
 
     if choose_game == 1:
         MemoryGame.play(int(level_difficulty))
