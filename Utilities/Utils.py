@@ -21,8 +21,11 @@ def checkData(dataFromUser, limitDown, limitUp):
     if dataFromUser.isdigit():
         if limitDown <= int(dataFromUser) <= limitUp:
             return True
+        else:
+            return False
 
 
 def Screen_cleaner():
     time.sleep(0.7)
     system('cls')
+
