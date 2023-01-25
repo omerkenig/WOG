@@ -1,0 +1,10 @@
+version: "3.3"
+services:
+  web:
+    image: omerkenig/wog_omer
+    container_name: omerWog
+    build: .
+    ports:
+      - "8081:5000"
+    volumes:
+      - ./score.txt:/wog/score.txt
