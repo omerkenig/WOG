@@ -1,6 +1,6 @@
 import random
 
-from Score.Score import add_score
+from Score import add_score
 from Utilities.Utils import checkData, Screen_cleaner
 
 
