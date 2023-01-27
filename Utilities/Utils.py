@@ -1,7 +1,7 @@
 import time
 from os import system
 
-SCORES_FILE_NAME = 'Score/Scores.txt'
+SCORES_FILE_NAME = 'score.txt'
 BAD_RETURN_CODE: dict[str, str] = {"2001": "Cannot install requirements!",
                                    '3001': "cannot open playerdata.dat (scores file). check file exists/corrupted",
                                    "4001": "Game module doesn't contain an appropriate about() function. cannot add "
