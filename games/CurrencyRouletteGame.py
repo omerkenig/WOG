@@ -1,6 +1,6 @@
 from currency_converter import CurrencyConverter
 import random
-from Score import add_score
+from Score.Score import add_score
 
 from Utilities.Utils import checkData, Screen_cleaner
 
