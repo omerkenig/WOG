@@ -13,9 +13,9 @@ COPY requirements.txt /WOG
 COPY .  /WOG
 RUN /usr/local/bin/python -m pip install --upgrade pip
 RUN pip install -r requirements.txt
-ADD /score.txt /home/omerk/World_Of_Games/score.txt
-ADD /MainScores.py /home/omerk/World_Of_Games/MainScores.py
-VOLUME /Score/Score.txt
+ADD /score.txt /home/omerk/WOG/score.txt
+ADD /MainScores.py /home/omerk/WOG/MainScores.py
+
 # Make port 5000 available to the world outside this container
 EXPOSE 5000
 # Run app.py when the container launches
