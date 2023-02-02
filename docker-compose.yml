@@ -3,12 +3,15 @@ version: '3' #Version of YML file
 services:
   web:
     image: omerkenig/wog_omer:1.1.1
+    restart: always
     container_name: omerWog
     volumes:
-      - ./score.txt:/wog/score.txt
+      - score.txt:/wog/score.txt
     environment:
       WORKDIR: WOG
     ports:
       - "8081:5000"
+
+
 
 
