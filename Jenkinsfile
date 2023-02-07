@@ -76,7 +76,7 @@ pipeline {
 
 					}
 					else {
-								bat 'docker push omerkenig/wog_omer'
+						bat 'docker push omerkenig/wog_omer'
 					}
 				}
             }
@@ -98,9 +98,10 @@ pipeline {
 					bat "docker rmi omerkenig/wog_omer"
 					echo "Docker Container has been terminated & removed."
 					bat 'docker logout'
-					echo "Logged out of Dockerhub"					}
+					echo "Logged out of Dockerhub"
 				}
-            }
-		}
-		}
-		}
+			}
+        }
+	}
+}
+}
