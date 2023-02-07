@@ -25,7 +25,6 @@ and will no longer be accessible.
 
 You can run the test pipeline using the already, available Jenkinsfile. 
 However, to push the build image to your own docker hub you will need to provide 
-credentials and incorporate them in your own Jenkins system under the appropriate id (see Jenkinsfile line 4)
 
 **Environment and minimum requirements**
 
