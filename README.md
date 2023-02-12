@@ -33,6 +33,9 @@ the platform was written is python3.8 code infrastructure,
 as such Python 3.8 and pip installer must be present on system.
 Jenkins and Docker are needed to run the testing pipeline.
 
+![img.png](templates/img.png)   ![img_1.png](templates/img_1.png)   ![img_2.png](templates/img_2.png)   ![img_3.png](templates/img_3.png)   
+
+
 **Features**
 
 self compiling games menu (will include all .py modules present in the ../WorldOfGames/Games/ folder.)
